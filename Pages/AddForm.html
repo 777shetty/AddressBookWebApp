@@ -7,7 +7,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="../css/AddForm.css">
       <title>Address Book form</title>
-    </hea
+      <script src="../Js/Addform.js"></script>
+    </head>
     <body>
       <header class="header-content header">
         <div class="logo-content">
@@ -19,7 +20,7 @@
         </div>
       </header>
       <div class="form-content">
-        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()" autocomplete="off">
             <div class="form-head">
                 <div class="form-head-text">Person Address Form</div>
                     <a href="./home.html" ><img src="../assets/images/cancel.png" class = "form-cancel-img"></a>
@@ -38,8 +39,8 @@
         </div>
           <div class="row-content">
             <label class="label text" for="address">Address</label>
-            <textarea class="input" id="address" name="Address" required autocomplete="off"></textarea>
-            <error-output class="address-error" for="address"></error-output>
+              <textarea class="input" id="address" name="Address" required autocomplete="off"></textarea>
+              <error-output class="address-error" for="address"></error-output>
           </div>
           <div class="row-content-exp">
             <div class="oneRow-content">
@@ -71,9 +72,8 @@
             <input class="input" type="text" name="zip" id="zip" required>
         </div>
         <error-output class="zip-error" for="text"></error-output>
-          </div>
+        </div>
         
-
       <div class="row-content">
         <label class="label text" for="email">Email</label>
         <input class="input" type="text" name="Email" id="email" required>
@@ -86,4 +86,4 @@
         </form>
     </div>
     </body>
-</html> 
+</html>
