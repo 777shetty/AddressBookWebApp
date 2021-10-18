@@ -21,21 +21,7 @@ class Contact{
         if(firstNameRegex.test(firstName))
         this._firstName = firstName;
         else
-        throw 'First Name is Invalid'
-    }
-
-    get lastName()
-    {
-        return this._lastName;
-    }
-
-    set lastName(lastName)
-    {
-        let lastNameRegex = RegExp('^[A-Z][a-z]{2,}$')
-        if(lastNameRegex.test(lastName))
-        this._lastName = lastName;
-        else
-        throw 'Last Name is Invalid'
+        throw 'Name is Invalid'
     }
 
     get address()
